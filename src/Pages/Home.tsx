@@ -1,13 +1,14 @@
 import { useState } from "react";
 import "../Styles/Home.css";
 import FormComponent from "../Components/FormComponent";
+import type {FormComponentSource} from "../types/interfaces";
 import {Login} from "../Services/Login";
 import {Signup} from "../Services/Signup";
 
 function Home() {
     const [activeComponent, setActiveComponent] = useState<string>("login");
 
-    const formTypes: any = {
+    const formTypes: Record<string, FormComponentSource> = {
         login: {
             elements: [
                 {
@@ -74,7 +75,7 @@ function Home() {
                     SignUp
                 </button>
             </div>
-                <FormComponent key={activeComponent} source={formTypes[activeComponent]} />
+            <FormComponent key={activeComponent} source={formTypes[activeComponent]} />
         </div>
     );
 }

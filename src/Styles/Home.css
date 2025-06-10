@@ -1,10 +1,10 @@
 .home {
-    background-color: #1a1a1a;
     color: white;
     font-family: Arial, sans-serif;
-    padding: 30px;
-    padding-bottom: 5px;
-    margin-top: 10vh;
+    margin: 20% auto;
+    width: fit-content;
+    padding: 0;
+    background-color: #2a2a2a;
 }
 
 .home .tabs {

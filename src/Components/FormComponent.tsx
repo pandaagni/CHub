@@ -11,7 +11,7 @@ function FormComponent({ source }: { source: FormComponentSource }) {
         const formData = new FormData(event.currentTarget);
         const result = await source.action(formData);
         if (result) {
-            navigate("/chatroom");
+            navigate("/tools");
             // window.location.href = "/chatroom";
         } else {
             setErrorMessage("An error occurred during form submission.");

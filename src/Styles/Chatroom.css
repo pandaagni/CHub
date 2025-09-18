@@ -1,0 +1,15 @@
+.chatroom {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+
+.chatlist {
+    flex: 0 0 30%;
+    height: 100%;
+}
+
+.chatbox {
+    flex: 0 0 70%;
+    height: 100%;
+}
